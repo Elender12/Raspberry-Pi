@@ -1,0 +1,20 @@
+Install wiringPi through git
+
+Step 1) Update your pi package repository (these 2 commands are recommended to do regularly)
+sudo apt-get update
+sudo apt-get upgrade
+
+Step 2)Install git if you don't have it
+Please run the following command to install git (if you have installed git, please skip this step):
+
+sudo apt-get install git-core
+Step 3)Obtain WiringPi using GIT:
+
+cd ~ git clone git://git.drogon.net/wiringPi
+If you have already used the clone operation, then
+ // nos hemos quedado aquí- hemos instalado WiringPi
+cd ~/wiringPi git pull origin
+Will fetch an updated version then you can re-run the build script below.
+To build/install there is a new simplified script:
+
+cd ~/wiringPi ./build
