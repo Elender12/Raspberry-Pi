@@ -1,3 +1,4 @@
+
 #!/usr/bin/python
 
 ###########################################################################
@@ -39,9 +40,9 @@ def main():
     print_message()
     while True:
     	GPIO.output(BuzzerPin, GPIO.LOW)
-        time.sleep(0.3)
+        time.sleep(1)
         GPIO.output(BuzzerPin, GPIO.HIGH)
-        time.sleep(0.3)
+        time.sleep(1)
 
 def destroy():
     # Turn off buzzer
@@ -59,3 +60,4 @@ if __name__ == '__main__':
     except KeyboardInterrupt:
         destroy()
 
+  
